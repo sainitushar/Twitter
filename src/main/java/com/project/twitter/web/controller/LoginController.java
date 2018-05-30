@@ -5,11 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 
 import com.project.twitter.web.validator.UserValidator;
 import com.project.twitter.web.service.UserService;
@@ -17,7 +13,7 @@ import com.project.twitter.web.service.SecurityService;
 import com.project.twitter.web.model.User;
 import com.project.twitter.web.service.LoginService;
 
-@Controller
+@RestController
 //@SessionAttributes("name")
 public class LoginController {
 	
